@@ -33,13 +33,11 @@ if (!DEEPGRAM_KEY || !LOGFARE_KEY) {
     const envPath = path.join(process.env.USERPROFILE || process.env.HOME || "", ".hermes", ".env");
     const env = fs.readFileSync(envPath, "utf8");
     if (!DEEPGRAM_KEY) {
-      const m = env.match(/DEEPGRAM_API_KEY\s*=\s*"?([^"
-\n]+)"?/);
+      const m = env.match(/DEEPGRAM_API_KEY\s*=\s*"?([^"\r\n]+)"?/);
       if (m) DEEPGRAM_KEY = m[1].trim();
     }
     if (!LOGFARE_KEY) {
-      const m2 = env.match(/LOGFARE_API_KEY\s*=\s*"?([^"
-\n]+)"?/);
+      const m2 = env.match(/LOGFARE_API_KEY\s*=\s*"?([^"\r\n]+)"?/);
       if (m2) LOGFARE_KEY = m2[1].trim();
     }
   } catch {}
@@ -113,14 +111,8 @@ ipcMain.handle("sara-stats", () => {
 const conversation = [];
 
 async function ttsToB64(text) {
-  // Limpiar texto para TTS: quitar emojis y caracteres especiales
-  const clean = text
-    .replace(/[^\x00-\x7FáéíóúñÁÉÍÓÚÑ¿¡!?.,;:\s]/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  console.log("[sara-master] TTS texto limpio:", clean.slice(0, 80));
-  try { return await speakDeepgram(clean); } catch (e) {
-    console.warn("[sara-master] tts fallo:", e.message);
+  try { return await speakDeepgram(text); } catch (e) {
+    console.warn("[sara] tts fallo:", e.message);
     return null;
   }
 }
@@ -131,12 +123,12 @@ async function askSaraStream(userText, win) {
 
   const useL0 = USE_LOGFARE && !!LOGFARE_KEY;
   const body = JSON.stringify({
-    model: useL0 ? LOGFARE_MODEL : PROXY_MODEL,
+    model: useL0 ? "gemma-4-26b" : PROXY_MODEL,
     messages: [
       {
         role: "system",
         content:
-          "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + " + " Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas.",
+          "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + ". Sos una persona real, no una IA. Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas.",
       },
       ...conversation,
     ],
@@ -150,7 +142,7 @@ async function askSaraStream(userText, win) {
   const doRequest = async () => new Promise((resolve, reject) => {
     const useL = USE_LOGFARE && !!LOGFARE_KEY;
     const req = (useL ? https : http).request(
-      { hostname: useL ? LOGFARE_HOST : PROXY_HOST,
+      { hostname: useL ? "logfare.ai" : PROXY_HOST,
         port: useL ? 443 : PROXY_PORT,
         path: "/v1/chat/completions",
         method: "POST",
@@ -189,14 +181,14 @@ async function askSaraStream(userText, win) {
         res.on("end", async () => {
           try {
             conversation.push({ role: "assistant", content: full.trim() || "(sin respuesta)" });
-            console.log("[sara-master] respuesta completa:", full.slice(0, 100));
+            console.log("[sara] respuesta completa:", full.slice(0, 100));
             
             const b64 = await ttsToB64(full.trim());
             if (b64) {
-              console.log("[sara-master] TTS OK, enviando audio al renderer, bytes:", b64.length);
+              console.log("[sara] TTS OK, enviando audio al renderer, bytes:", b64.length);
               win.webContents.send("sara-audio", { audioB64: b64, order: 0, text: full.trim() });
             } else {
-              console.warn("[sara-master] TTS falló - respuesta sin voz");
+              console.warn("[sara] TTS falló - respuesta sin voz");
             }
             resolve({ reply: full.trim() || "(sin respuesta)", tokens: tokenCounters });
           } catch (e) { reject(e); }
@@ -216,7 +208,7 @@ async function askSaraStream(userText, win) {
     } catch (err) {
       lastErr = err;
       if (String(err.message).includes("429") && attempt < 4) {
-        console.log("[sara-master] 429, reintento", attempt);
+        console.log("[sara] 429, reintento", attempt);
         await new Promise((res) => setTimeout(res, attempt * 4000));
         continue;
       }
@@ -227,58 +219,57 @@ async function askSaraStream(userText, win) {
 }
 
 ipcMain.handle("sara-ask", async (_e, text) => {
-  console.log("[sara-master] escuchado:", text);
+  console.log("[sara] escuchado:", text);
   const currentWin = BrowserWindow.getFocusedWindow() || BrowserWindow.getAllWindows()[0];
   if (!currentWin) {
-    console.error("[sara-master] no hay ventana");
+    console.error("[sara] no hay ventana");
     return { reply: "Error: no hay ventana", tokens: tokenCounters };
   }
   try {
     const r = await askSaraStream(text, currentWin);
     return { reply: r.reply, tokens: r.tokens };
   } catch (err) {
-    console.error("[sara-master] ERROR:", err.message);
+    console.error("[sara] ERROR:", err.message);
     return { reply: "Estoy con el núcleo saturado ahora.", tokens: tokenCounters };
   }
 });
 
 function speakDeepgram(text) {
-  console.log("[sara-master] TTS inicio, text length:", text.length);
   return new Promise((resolve, reject) => {
     if (!DEEPGRAM_KEY) {
-      console.log("[sara-master] TTS sin key");
+      console.log("[sara] TTS sin key");
       return reject(new Error("sin key"));
     }
     const body = text;
-    console.log("[sara-master] TTS conectando...");
+    console.log("[sara] TTS conectando...");
     const req = https.request(
       { hostname: "api.deepgram.com", path: "/v1/speak?model=" + MODELO_VOZ + "&encoding=mp3", method: "POST",
         headers: { Authorization: "Token " + DEEPGRAM_KEY, "Content-Type": "text/plain",
                    "Content-Length": Buffer.byteLength(body) } },
       (res) => {
-        console.log("[sara-master] TTS respuesta:", res.statusCode);
+        console.log("[sara] TTS respuesta:", res.statusCode);
         const chunks = [];
         res.on("data", (c) => chunks.push(c));
         res.on("end", () => {
           if (res.statusCode !== 200)
             return reject(new Error("deepgram " + res.statusCode + ": " + Buffer.concat(chunks).toString().slice(0, 120)));
           const b64 = Buffer.concat(chunks).toString("base64");
-          console.log("[sara-master] TTS OK, bytes:", b64.length);
+          console.log("[sara] TTS OK, bytes:", b64.length);
           resolve(b64);
         });
       }
     );
     req.on("error", (e) => {
-      console.error("[sara-master] TTS req error:", e.message);
+      console.error("[sara] TTS req error:", e.message);
       reject(e);
     });
     req.setTimeout(10000, () => {
-      console.error("[sara-master] TTS timeout");
+      console.error("[sara] TTS timeout");
       req.destroy(new Error("timeout"));
     });
     req.write(body);
     req.end();
-    console.log("[sara-master] TTS request enviado");
+    console.log("[sara] TTS request enviado");
   });
 }
 
@@ -405,9 +396,9 @@ function askSaraSimple(userText) {
   return new Promise((resolve, reject) => {
     const useLw = USE_LOGFARE && !!LOGFARE_KEY;
     const body = JSON.stringify({
-      model: useLw ? LOGFARE_MODEL : PROXY_MODEL,
+      model: useLw ? "gemma-4-26b" : PROXY_MODEL,
       messages: [
-        { role: "system", content: "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + " + " Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas." },
+        { role: "system", content: "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + ". Sos una persona real, no una IA. Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas." },
         ...conversation,
       ],
       max_tokens: useLw ? 2000 : 1200,
@@ -415,7 +406,7 @@ function askSaraSimple(userText) {
     });
     const useL = USE_LOGFARE && !!LOGFARE_KEY;
     const req = (useL ? https : http).request(
-      { hostname: useL ? LOGFARE_HOST : PROXY_HOST,
+      { hostname: useL ? "logfare.ai" : PROXY_HOST,
         port: useL ? 443 : PROXY_PORT,
         path: "/v1/chat/completions",
         method: "POST",
@@ -528,7 +519,7 @@ http.createServer((req, res) => {
   }
   sendFile(res, path.join(__dirname, p));
 }).listen(WEB_PORT, () => {
-  console.log("[sara-master] web para el celular: http://" + getLocalIP() + ":" + WEB_PORT);
+  console.log("[sara] web para el celular: http://" + getLocalIP() + ":" + WEB_PORT);
 });
 
 app.whenReady().then(() => {

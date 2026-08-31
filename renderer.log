@@ -670,3 +670,13 @@ once the app is packaged. (sandbox_bundle:2)
 00:51:44 [renderer:1] [sara] ctx state: running (index.html:203)
 00:51:44 [renderer:1] [sara] decode OK, duration: 5.088 (index.html:205)
 00:51:44 [renderer:1] [sara] reproducción iniciada (index.html:224)
+01:21:53 [renderer:1] [sara] lista — escribí o hablale (index.html:281)
+01:21:53 [renderer:1] [sara] AudioContext creado: running (index.html:170)
+01:21:53 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)

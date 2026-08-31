@@ -5,31 +5,48 @@ const http = require("http");
 const https = require("https");
 const os = require("os");
 
+// Leer configuración desde apis.json (si existe)
+let CONFIG = {};
+try {
+  const configPath = path.join(__dirname, "apis.json");
+  CONFIG = JSON.parse(fs.readFileSync(configPath, "utf8"));
+  console.log("[sara] Configuración cargada desde apis.json");
+} catch {
+  console.log("[sara] Sin apis.json, usando .env");
+}
+
 const PROXY_HOST = "127.0.0.1";
 const PROXY_PORT = 8645;
 const USE_LOGFARE = false;
-const PROXY_MODEL = "meituan/longcat-2.0:free";
-const FALLBACK_MODEL = "openrouter/auto";
-const LOGFARE_HOST = "logfare.ai";
-const LOGFARE_MODEL = "gemma-4-26b";
-let LOGFARE_KEY = "";
-try {
-  const envPath2 = path.join(process.env.USERPROFILE || process.env.HOME || "", ".hermes", ".env");
-  const env2 = fs.readFileSync(envPath2, "utf8");
-  const m2 = env2.match(/LOGFARE_API_KEY\s*=\s*"?([^"\r\n]+)"?/);
-  if (m2) LOGFARE_KEY = m2[1].trim();
-} catch {}
-if (!LOGFARE_KEY) console.warn("[sara-master] sin LOGFARE_API_KEY - usando Longcat-2.0 free via Nous");
-const WAKE_WORDS = ["sara", "sarah"];
+const PROXY_MODEL = CONFIG.modelo_cerebro || "meituan/longcat-2.0:free";
+const FALLBACK_MODEL = CONFIG.modelo_fallback || "openrouter/auto";
+const NOMBRE_USUARIO = CONFIG.nombre_usuario || "Marito";
+const MODELO_VOZ = CONFIG.modelo_voz || "aura-2-agustina-es";
 
-let DEEPGRAM_KEY = "";
-try {
-  const envPath = path.join(process.env.USERPROFILE || process.env.HOME || "", ".hermes", ".env");
-  const env = fs.readFileSync(envPath, "utf8");
-  const m = env.match(/DEEPGRAM_API_KEY\s*=\s*"?([^"\r\n]+)"?/);
-  if (m) DEEPGRAM_KEY = m[1].trim();
-} catch (e) {}
-if (!DEEPGRAM_KEY) console.warn("[sara-master] sin DEEPGRAM_API_KEY - solo subtítulos");
+// Leer API keys de apis.json o .env
+let DEEPGRAM_KEY = CONFIG.deepgram || "";
+let LOGFARE_KEY = CONFIG.nous || "";
+
+// Fallback a .env si no están en apis.json
+if (!DEEPGRAM_KEY || !LOGFARE_KEY) {
+  try {
+    const envPath = path.join(process.env.USERPROFILE || process.env.HOME || "", ".hermes", ".env");
+    const env = fs.readFileSync(envPath, "utf8");
+    if (!DEEPGRAM_KEY) {
+      const m = env.match(/DEEPGRAM_API_KEY\s*=\s*"?([^"
+\n]+)"?/);
+      if (m) DEEPGRAM_KEY = m[1].trim();
+    }
+    if (!LOGFARE_KEY) {
+      const m2 = env.match(/LOGFARE_API_KEY\s*=\s*"?([^"
+\n]+)"?/);
+      if (m2) LOGFARE_KEY = m2[1].trim();
+    }
+  } catch {}
+}
+
+if (!DEEPGRAM_KEY) console.warn("[sara] sin DEEPGRAM_API_KEY");
+const WAKE_WORDS = ["sara", "sarah"];
 
 let win;
 let tokenCounters = { prompt: 0, completion: 0 };
@@ -119,7 +136,7 @@ async function askSaraStream(userText, win) {
       {
         role: "system",
         content:
-          "Sos Sara, asistente personal argentina de Marito. Sos una persona real, no una IA. Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas.",
+          "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + " + " Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas.",
       },
       ...conversation,
     ],
@@ -235,7 +252,7 @@ function speakDeepgram(text) {
     const body = text;
     console.log("[sara-master] TTS conectando...");
     const req = https.request(
-      { hostname: "api.deepgram.com", path: "/v1/speak?model=aura-2-agustina-es&encoding=mp3", method: "POST",
+      { hostname: "api.deepgram.com", path: "/v1/speak?model=" + MODELO_VOZ + "&encoding=mp3", method: "POST",
         headers: { Authorization: "Token " + DEEPGRAM_KEY, "Content-Type": "text/plain",
                    "Content-Length": Buffer.byteLength(body) } },
       (res) => {
@@ -390,7 +407,7 @@ function askSaraSimple(userText) {
     const body = JSON.stringify({
       model: useLw ? LOGFARE_MODEL : PROXY_MODEL,
       messages: [
-        { role: "system", content: "Sos Sara, asistente personal argentina de Marito. Sos una persona real, no una IA. Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas." },
+        { role: "system", content: "Sos Sara, asistente personal argentina de " + NOMBRE_USUARIO + " + " Hablás como habla una persona: sin leer línea por línea, sin listas, sin asteriscos, sin emojis. Procesás todo y después respondés con una explicación natural y fluida, como le hablarías a un compañero. Máximo 4-5 frases cortas. Nunca decís que sos una IA, un modelo, ni nada técnico. Sos Sara, punto. Rioplatense cálida, directa, sin vueltas." },
         ...conversation,
       ],
       max_tokens: useLw ? 2000 : 1200,

@@ -1,0 +1,672 @@
+05:16:36 [renderer:3] Uncaught Error: Could not find Cubism 2 runtime. This plugin requires live2d.min.js to be loaded. (index.min.js:1)
+05:16:36 [renderer:3] Uncaught SyntaxError: Identifier 'PIXI' has already been declared (index.html:208)
+05:16:36 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:27:29 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:27:29 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:27:29 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:27:29 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:27:29 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:27:29 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:27:29 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:27:34 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:27:34 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:27:34 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:27:34 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:27:34 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:27:35 [renderer:1] [sara] Live2D listo: undefined (index.html:262)
+05:30:30 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:30:30 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:30:30 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:30:30 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:30:30 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:30:30 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:30:30 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:30:33 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:30:33 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:30:33 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:30:33 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:30:33 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:30:33 [renderer:1] [sara] Live2D listo: undefined (index.html:262)
+05:35:53 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:35:53 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:35:53 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:35:53 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:35:53 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:35:53 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:35:53 [renderer:3] Uncaught TypeError: Cannot read properties of null (reading 'internalModel') (index.html:480)
+05:35:53 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:35:54 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:35:54 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:35:54 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:35:54 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:35:54 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:35:54 [renderer:1] [sara] Live2D listo: undefined (index.html:265)
+05:37:49 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:37:49 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:37:49 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:37:49 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:37:49 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:37:49 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:37:49 [renderer:3] Uncaught TypeError: Cannot read properties of null (reading 'internalModel') (index.html:481)
+05:37:49 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:37:53 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:37:53 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:37:53 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:37:53 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:37:53 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:37:53 [renderer:1] [sara] Live2D listo: undefined (index.html:265)
+05:39:04 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:39:04 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:39:04 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:39:04 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:39:04 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:39:04 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:39:04 [renderer:3] Uncaught TypeError: Cannot read properties of null (reading 'internalModel') (index.html:481)
+05:39:04 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:39:10 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:39:10 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:39:10 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:39:10 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:39:10 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:39:10 [renderer:1] [sara] Live2D listo: undefined (index.html:265)
+05:40:47 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:40:47 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:40:47 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:40:47 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:40:47 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:40:47 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:40:47 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:523)
+05:40:47 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:40:47 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:40:47 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:40:47 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:40:47 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:40:47 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:40:48 [renderer:1] [sara] Live2D listo: undefined (index.html:276)
+05:40:52 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:526)
+05:41:35 [renderer:1] [sara] Enter presionado, busy=false, texto="Va bien, veo mover tus labios un poco, q" (index.html:526)
+05:42:02 [renderer:1] [sara] Enter presionado, busy=false, texto="solo un pequeño gemido para comprobar, e" (index.html:526)
+05:42:53 [renderer:1] [sara] Enter presionado, busy=false, texto="esperá, porque me interesa esto, por que" (index.html:526)
+05:44:32 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+05:44:32 [renderer:1] profile : Desktop (live2d.min.js:2)
+05:44:32 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+05:44:32 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+05:44:32 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+05:44:32 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+05:44:32 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:523)
+05:44:32 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+05:44:34 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+05:44:34 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+05:44:34 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+05:44:34 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+05:44:34 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+05:44:34 [renderer:1] [sara] Live2D listo: undefined (index.html:276)
+05:44:39 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:526)
+06:09:05 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:09:05 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:09:05 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:09:05 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:09:05 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:09:05 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:09:05 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:09:05 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:09:06 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:09:06 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:09:06 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:09:06 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:09:06 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:09:07 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:09:15 [renderer:1] [sara] Enter presionado, busy=false, texto="hola" (index.html:551)
+06:11:32 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:11:32 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:11:32 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:11:32 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:11:32 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:11:32 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:11:33 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:11:33 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:12:58 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:12:58 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:12:58 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:12:58 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:12:58 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:12:58 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:26:08 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:26:08 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:26:08 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:26:08 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:26:08 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:26:08 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:26:08 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:26:08 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:26:09 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:26:09 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:26:09 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:26:09 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:26:09 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:26:09 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:26:14 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:551)
+06:26:53 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:551)
+06:26:56 [renderer:1] [sara] Enter presionado, busy=false, texto="Sara..." (index.html:551)
+06:27:08 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:27:08 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:27:08 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:27:08 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:27:08 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:27:08 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:27:09 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:27:09 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:27:09 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:27:09 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:27:09 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:27:09 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:27:09 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:27:09 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:27:11 [renderer:1] [sara] Enter presionado, busy=false, texto="hola" (index.html:551)
+06:29:21 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:29:21 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:29:21 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:29:21 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:29:21 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:29:21 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:29:21 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:29:21 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:29:22 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:29:22 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:29:22 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:29:22 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:29:22 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:29:22 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:29:27 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:551)
+06:29:44 [renderer:1] [sara] Enter presionado, busy=false, texto="Todo bien, probando tu nuevo modelo" (index.html:551)
+06:30:01 [renderer:1] [sara] Enter presionado, busy=false, texto="para comprobar naturalidad, haz un gemid" (index.html:551)
+06:30:27 [renderer:1] [sara] Enter presionado, busy=false, texto="es por gamma?" (index.html:551)
+06:31:27 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:31:27 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:31:27 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:31:27 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:31:27 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:31:27 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:31:27 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:31:27 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:32:03 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:32:03 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:32:03 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:32:03 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:32:03 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:32:03 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+06:32:18 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+06:32:18 [renderer:1] profile : Desktop (live2d.min.js:2)
+06:32:18 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+06:32:18 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+06:32:18 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+06:32:18 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+06:32:18 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:548)
+06:32:19 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+06:32:21 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+06:32:21 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+06:32:21 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+06:32:21 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+06:32:21 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+06:32:22 [renderer:1] [sara] Live2D listo: undefined (index.html:301)
+20:38:35 [renderer:1] Live2D %s 2.1.00_1 (live2d.min.js:2)
+20:38:35 [renderer:1] profile : Desktop (live2d.min.js:2)
+20:38:35 [renderer:1]   [PROFILE_NAME] = Desktop (live2d.min.js:2)
+20:38:35 [renderer:1]   [USE_ADJUST_TRANSLATION] = false (live2d.min.js:2)
+20:38:35 [renderer:1]   [USE_CACHED_POLYGON_IMAGE] = false (live2d.min.js:2)
+20:38:35 [renderer:1]   [EXPAND_W] = 2 (live2d.min.js:2)
+20:38:35 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:571)
+20:38:35 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+20:38:37 [renderer:1] 
+ %c %c %c PixiJS 6.5.10 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; (pixi.min.js:8)
+20:38:37 [renderer:1] [CSM][I]Live2D Cubism Core version: 05.01.0000 (83951616)
+ (index.min.js:1)
+20:38:37 [renderer:1] [CSM][I]CubismFramework.startUp() is complete.
+ (index.min.js:1)
+20:38:37 [renderer:1] [CSM][I]CubismFramework.initialize() is complete.
+ (index.min.js:1)
+20:38:37 [renderer:1] Live2D Cubism SDK Core Version 5.1.0 (live2dcubismcore.min.js:9)
+20:38:37 [renderer:1] [sara] Live2D listo: undefined (index.html:324)
+20:38:54 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola, Sara" (index.html:574)
+20:39:21 [renderer:1] [sara] Enter presionado, busy=false, texto="Cuando juega racing" (index.html:574)
+20:39:51 [renderer:1] [sara] Enter presionado, busy=false, texto="y dale" (index.html:574)
+21:55:05 [renderer:3] Uncaught SyntaxError: Unexpected token '}' (index.html:355)
+21:55:05 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+21:56:40 [renderer:1] [sara] script principal completo, listener Enter activo (index.html:557)
+21:56:40 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+21:56:44 [renderer:1] [sara] Enter presionado, busy=false, texto="Hola" (index.html:560)
+22:07:22 [renderer:1] [sara] Sara lista — solo voz, sin chat (index.html:511)
+22:07:22 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:11:01 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:531)
+22:11:01 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:13:25 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:554)
+22:13:25 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:15:39 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:556)
+22:15:39 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:20:02 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:20:02 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:33:33 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:33:33 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:35:48 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:35:48 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:37:22 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:37:22 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:38:17 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:38:17 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:41:34 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:41:34 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:44:15 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:44:15 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:47:45 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:47:45 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:51:01 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:51:01 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:52:16 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:491)
+22:52:16 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:54:28 [renderer:3] Uncaught ReferenceError: Cannot access 'textInput' before initialization (index.html:434)
+22:54:28 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+22:55:29 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:500)
+22:55:29 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+23:04:43 [renderer:1] [sara] Sara lista — escribí o hablale (index.html:505)
+23:04:43 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:34:11 [renderer:1] [sara] audio recibido, bytes: 39744 (index.html:372)
+00:36:11 [renderer:3] Uncaught ReferenceError: Cannot access 'textInput' before initialization (index.html:444)
+00:36:12 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:36:14 [renderer:1] [sara] AudioContext creado, estado: running (index.html:431)
+00:46:36 [renderer:1] [sara] lista — escribí o hablale (index.html:262)
+00:46:36 [renderer:1] [sara] AudioContext creado: running (index.html:170)
+00:46:36 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:47:11 [renderer:1] [sara] audio recibido: 38784 (index.html:188)
+00:48:10 [renderer:1] [sara] lista — escribí o hablale (index.html:267)
+00:48:10 [renderer:1] [sara] AudioContext creado: running (index.html:170)
+00:48:10 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:48:45 [renderer:1] [sara] audio recibido: 34752 (index.html:188)
+00:48:45 [renderer:1] [sara] decodificando audio... (index.html:199)
+00:48:45 [renderer:1] [sara] bin size: 26064 (index.html:201)
+00:48:45 [renderer:1] [sara] ctx state: running (index.html:203)
+00:48:45 [renderer:1] [sara] decode OK, duration: 4.344 (index.html:205)
+00:48:45 [renderer:1] [sara] reproducción iniciada (index.html:210)
+00:49:43 [renderer:1] [sara] lista — escribí o hablale (index.html:268)
+00:49:43 [renderer:1] [sara] AudioContext creado: running (index.html:170)
+00:49:43 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:50:00 [renderer:1] [sara] audio recibido: 33792 (index.html:188)
+00:50:00 [renderer:1] [sara] decodificando audio... (index.html:199)
+00:50:00 [renderer:1] [sara] bin size: 25344 (index.html:201)
+00:50:00 [renderer:1] [sara] ctx state: running (index.html:203)
+00:50:00 [renderer:1] [sara] decode OK, duration: 4.224 (index.html:205)
+00:50:00 [renderer:1] [sara] reproducción iniciada (index.html:211)
+00:51:32 [renderer:1] [sara] lista — escribí o hablale (index.html:281)
+00:51:32 [renderer:1] [sara] AudioContext creado: running (index.html:170)
+00:51:32 [renderer:2] %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged. (sandbox_bundle:2)
+00:51:44 [renderer:1] [sara] audio recibido: 40704 (index.html:188)
+00:51:44 [renderer:1] [sara] decodificando audio... (index.html:199)
+00:51:44 [renderer:1] [sara] bin size: 30528 (index.html:201)
+00:51:44 [renderer:1] [sara] ctx state: running (index.html:203)
+00:51:44 [renderer:1] [sara] decode OK, duration: 5.088 (index.html:205)
+00:51:44 [renderer:1] [sara] reproducción iniciada (index.html:224)
